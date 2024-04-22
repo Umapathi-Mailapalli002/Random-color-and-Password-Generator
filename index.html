@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gradient-to-l from-[#629b88] to-[#1D2671] font-bold font-[roboto] text-[20px]">
+    <div class="flex justify-between mx-40 my-9">
+        <input id="leftColor" class="w-24 h-7 bg-white px-3"></input>
+        <div id="left"  class=" w-8 h-7 p-2 bg-white flex justify-center items-center"><i
+                class="fa-solid fa-copy"></i></div>
+                <div class="w-[100vw]"></div>
+        <div id="right" class="w-7 h-7 p-2 bg-white flex justify-center items-center"><i
+                class="fa-solid fa-copy"></i></div>
+        <input id="rightColor" class="w-24 h-7 bg-white px-3"></input>
+    </div>
+    <div class="w-[100vw] h-[100vh] flex justify-center items-center">
+        <div class="bg-gradient-to-l from-[#EA8D8D] to-[#A890FE] w-[50vw] h-[60vh] grid-flow-col rounded-3xl">
+            <div class="my-7 mx-14 flex justify-center items-center"><input type="text" id="passwordInput">
+                <div class="w-7 h-[30px] bg-white" id="copy"><i class="fa-solid fa-copy"></i></div>
+            </div>
+            <div class="my-7 mx-14 flex justify-center items-center"><label for="length">Password length :</label><input
+                    class="w-8 p-1 rounded-lg" type="text" id="length"></div>
+            <div class="my-7 mx-14 flex justify-center items-center"><label for="capital" class="mr-[87px]">Capital
+                    Letters :</label><input type="checkbox" class=" h-5 w-5" id="capital"></div>
+            <div class="my-7 mx-14 flex justify-center items-center"><label for="small" class="mr-[101px]">Small Letters
+                    :</label><input type="checkbox" class=" h-5 w-5" id="small"></div>
+            <div class="my-7 mx-14 flex justify-center items-center"><label for="numbers" class="mr-[136px]">Numbers
+                    :</label><input type="checkbox" class=" h-5 w-5" id="numbers"></div>
+            <div class="my-7 mx-14 flex justify-center items-center"><label for="charecters" class="mr-[55px]">Special
+                    Charecters :</label><input class=" h-5 w-5 mx" type="checkbox" id="charecters"></div>
+            <div class="my-7 mx-14 flex justify-center items-center"><button
+                    class="bg-gradient-to-l from-green-600 to-blue-600 rounded-2xl p-2" type="button"
+                    value="Genrate Password" id="btn">Generate Password</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
